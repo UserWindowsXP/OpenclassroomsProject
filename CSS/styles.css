@@ -1,23 +1,151 @@
+/* for body */
+
+*{
+    margin: 0;
+}
+
 body{
     color: black;
-    font-size: 22px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
 h1{
     font-weight: 700;
+    font-size: 22px;
 }
 
+a{    
+    text-decoration: none;
+    color: #000000;
+}
+
+li{
+    list-style: none;
+}
+
+/* HEADER */
 
 header{
-    border: solid 2px rgb(202, 202, 56);
+    /* border: solid 2px rgb(202, 202, 56); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+header a{
+    display: inline-block;
+    width: 162px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+#accommodation-page{
+    color: #0065FC;
+    font-weight: 500;
+    padding-top: 48px;
+    border-top: solid 2px #0065FC;
+}
+
+header #right-nav{
+    margin-right: 77px;
+}
+
+header img{
+    margin-top: 44px;
+    width: 61.09px;
+    margin-left: 55px;
+}
+
+/* NAV */
 nav{
     border: solid 2px orange;
+    margin: 63px 0 0 55px;
 }
 
+nav p{
+    margin-top: 8px;
+}
+/* NAV - SEARCH BAR */
+
+#f-search-bar{
+    border: none;
+    margin-top: 20px;
+    display: flex;
+
+}
+
+#f-search-bar i{
+    border: 1px solid #F2F2F2;
+    padding: 16px 18px 15px 18px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    margin-right: 0px;
+}
+
+#f-type-city{
+    height: 49px;
+    border: 1px solid #F2F2F2;
+}
+
+#submit{
+    height: 49px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 16px;
+}
+
+/* NAV - FILTERS  */
+
+#f-filters{
+    margin-top: 26px;
+    border: #0065FC 1px solid;
+    padding: 0;
+}
+
+#f-filters i{
+    color: #0065FC;
+    font-size: 18px;
+}
+
+/* NAV - INFO */
+#nav-i{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    border: #0065FC 1px solid;
+}
+
+#nav-i-icon{
+   color: #0065FC;
+   border: 1px solid #D9D9D9;
+   border-radius: 12px;
+   width: 24px;
+   height: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#nav-i i{
+    font-size: 10px;
+}
+#nav-i span{
+    margin-left: 11px;
+}
+
+
+
+
+
+/* MAIN */
 main{
     border: solid 2px green;
 }

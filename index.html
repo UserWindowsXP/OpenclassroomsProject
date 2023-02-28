@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
     
-    <link rel="stylesheet" href="https://kit.fontawesome.com/2ac50d8ba8.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Booki</title>
 </head>
@@ -20,13 +20,12 @@
 
     <header>
         <div class="logo" id="logo-Booki"> 
-            <img src="#" alt="logo Booki"> 
+            <img src="images/logo/Booki.png" alt="logo Booki"> 
         </div>
 
         <div id="right-nav"> 
-            <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <a href="index.html" id="accommodation-page">Hébergements</a>
+                <a href="#">Activités</a>
             </ul>
         </div>
    </header>
@@ -35,20 +34,33 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         
-        <div id="search-place"></div>
-        
-        <div id="filters">
-            <span> Filtres</span>
-            <ul>
-                <li><a href="#">Économique</a></li>
-                <li><a href="#">Familial</a></li>
-                <li><a href="#">Romantique</a></li>
-                <li><a href="#">Animaux autorisés</a></li>
-            </ul>
-        </div>
+        <form method="get" action=""> 
+            <fieldset id="f-search-bar"> 
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="f-type-city" name="type-city" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher" id="submit">
+            </fieldset>
+
+            <fieldset id="f-filters">
+                <span>Filters</span>
+                <input type="checkbox" name="filter" value="Économique" id="economy">
+                <label for="economy"> <i class="fa-solid fa-money-bill-wave"></i> Économique</label>
+
+                <input type="checkbox" name="filter" value="Familial" id="family">
+                <label for="family"> <i class="fa-solid fa-money-bill-wave"></i> Familial</label>
+
+                <input type="checkbox" name="filter" value="Romantique" id="romantic">
+                <label for="romantic"> <i class="fa-sharp fa-solid fa-heart"></i> Romantique</label>
+
+                <input type="checkbox" name="filter" value="Animaux autorisés" id="pet">
+                <label for="pet"><i class="fa-solid fa-dog"></i> Animaux autorisés</label>
+            </fieldset>
+
+        </form>
         
         <div id="nav-i">
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+             <div id="nav-i-icon"> <i class="fa-solid fa-info"></i> </div> 
+             <span> Plus de 500 logements sont disponibles dans cette ville </span>
         </div>
    </nav>
    
