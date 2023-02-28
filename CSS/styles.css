@@ -1,0 +1,39 @@
+body{
+    color: black;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 700;
+}
+
+
+header{
+    border: solid 2px rgb(202, 202, 56);
+}
+
+nav{
+    border: solid 2px orange;
+}
+
+main{
+    border: solid 2px green;
+}
+
+aside{
+    border: solid 2px lightblue;
+}
+
+footer{
+    border: solid 2px blueviolet;
+}
+
+#accommodation-popular{
+    border: solid 2px rosybrown;
+}
+
+#accommodation-list{
+    border: solid 2px brown;
+}
