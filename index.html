@@ -1,14 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <title>Document</title>
+    
+    <link href="CSS/styles.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="https://kit.fontawesome.com/2ac50d8ba8.css" crossorigin="anonymous">
+    
+    <title>Booki</title>
 </head>
+
 <body>
-    <h1>TEST</h1>
-    <p>Test 2 </p>
+
+    <header>
+        <div class="logo" id="logo-Booki"> 
+            <img src="#" alt="logo Booki"> 
+        </div>
+
+        <div id="right-nav"> 
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
+        </div>
+   </header>
+
+   <nav>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+        
+        <div id="search-place"></div>
+        
+        <div id="filters">
+            <span> Filtres</span>
+            <ul>
+                <li><a href="#">Économique</a></li>
+                <li><a href="#">Familial</a></li>
+                <li><a href="#">Romantique</a></li>
+                <li><a href="#">Animaux autorisés</a></li>
+            </ul>
+        </div>
+        
+        <div id="nav-i">
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+   </nav>
+   
+   <main>
+        <section id="accommodation-list">
+            <h1>Hébergements à Marseille</h1>
+        
+            <div class="card-container">
+                <div class="card" id="list-card1">
+                    <img src="#" alt="accommodation image 1">
+                    <h2>Auberge La Canebière</h2>
+                    <h3>Nuit à partir de 25€</h3>
+                    <div class="stars"></div>
+                </div>
+                
+                <div class="card" id="list-card2">
+                    <img src="#" alt="accommodation image 2">
+                    <h2>Hôtel du port</h2>
+                    <h3>Nuit à partir de 52€</h3>
+                    <div class="stars"></div>
+                </div>
+
+                <div class="card" id="list-card3">
+                    <img src="#" alt="accommodation image 3">
+                    <h2>Hôtel Les mouettes</h2>
+                    <h3>Nuit à partir de 76€</h3>
+                    <div class="stars"></div>
+                </div>
+
+                <div class="card" id="list-card4">
+                    <img src="#" alt="accommodation image 4">
+                    <h2>Hôtel de la mer</h2>
+                    <h3>Nuit à partir de 46€</h3>
+                    <div class="stars"></div>
+                </div>
+
+                <div class="card" id="list-card5">
+                    <img src="#" alt="accommodation image 5">
+                    <h2>Auberge Le Panier</h2>
+                    <h3>Nuit à partir de 23€</h3>
+                    <div class="stars"></div>
+                </div>
+
+                <div class="card" id="list-card6">
+                    <img src="#" alt="accommodation image 6">
+                    <h2>Hôtel Chez Amina</h2>
+                    <h3>Nuit à partir de 96€</h3>
+                    <div class="stars"></div>
+                </div>
+            </div>  
+            <p>Afficher plus</p> 
+        </section>
+        
+        <section id="accommodation-popular">
+            <div id="popular-title">
+                <h1>Les plus populaires</h1>
+                <img src="#" class="logo">
+            </div>
+
+            <div class="card-container">
+                <div class="card" id="popular-card1">
+                    <img src="#" alt="accommodation image 1">
+                    <h2>Hôtel Le soleil du matin</h2>
+                    <h3>Nuit à partir de 128€</h3>
+                    <div class="stars"></div>
+                </div>
+                
+                <div class="card" id="popular-card2">
+                    <img src="#" alt="accommodation image 2">
+                    <h2>Chambres d’hôtes Au cœur de l’eau</h2>
+                    <h3>Nuit à partir de 52€</h3>
+                    <div class="stars"></div>
+                </div>
+
+                <div class="card" id="popular-card3">
+                    <img src="#" alt="accommodation image 3">
+                    <h2>Hôtel Bleu et Blanc</h2>
+                    <h3>Nuit à partir de 68€</h3>
+                    <div class="stars"></div>
+                </div>
+
+            </div>  
+
+        </section>
+    </main>
+
+    <aside id="activities">
+        <h1>Activités à Marseille</h1>
+
+        <div class="activities-card-container">
+            <div class="activities-card" id="activities-card1">
+                <img src="#" alt="activities image 1">
+                <h2>Vieux-Port</h2>
+            </div>
+            
+            <div class="activities-card" id="activities-card2">
+                <img src="#" alt="activities image 2">
+                <h2>Fort de Pomègues</h2>>
+            </div>
+
+            <div class="activities-card" id="activities-card3">
+                <img src="#" alt="activities image 3">
+                <h2>Parc national des Calanques</h2>
+            </div>
+
+            <div class="activities-card" id="activities-card4">
+                <img src="#" alt="activities image 4">
+                <h2>Notre-Dame-de-la-Garde</h2>
+            </div>
+        </div>  
+    </aside>
+   
+  
+   <footer>
+        <div id="about">
+            <h2><a href="#">À propos</a></h2>
+
+            <ul>
+                <li> <a href="#">Fonctionnement du site</a></li>
+                <li> <a href="#">Conditions générales</a></li>
+                <li> <a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+
+        <div id="about-accommodation">
+            <h2><a href="#">Nos hébergements</a></h2>
+
+            <ul>
+                <li> <a href="#">Charte qualité</a></li>
+                <li> <a href="#">Proposer votre hôtel</a></li>
+            </ul>
+        </div>
+
+        <div id="assistance">
+            <h2><a href="#">Assistance</a></h2>
+
+            <ul>
+                <li> <a href="#">Centre d’aide</a></li>
+                <li> <a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+   </footer>
 </body>
 </html>
