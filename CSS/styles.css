@@ -14,6 +14,20 @@ body{
 h1{
     font-weight: 700;
     font-size: 22px;
+    font-size: 1.38rem;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 16px;
+    margin: auto 16px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 14px;
+    margin: auto 16px;
+
 }
 
 a{    
@@ -63,7 +77,7 @@ header img{
 
 /* NAV */
 nav{
-    border: solid 2px orange;
+    /* border: solid 2px orange; */
     margin: 63px 0 0 55px;
 }
 
@@ -73,10 +87,12 @@ nav p{
 /* NAV - SEARCH BAR */
 
 #f-search-bar{
-    border: none;
+    display: inline-flex;
+    align-items: center;
     margin-top: 20px;
-    display: flex;
-
+    padding: 0;
+    height: 49px;
+    border: none;
 }
 
 #f-search-bar i{
@@ -85,19 +101,36 @@ nav p{
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     margin-right: 0px;
+    font-size: 18px;
 }
 
 #f-type-city{
     height: 49px;
+    width: 197px;
     border: 1px solid #F2F2F2;
+    border-right: solid 1px transparent;
+    padding: 0 17px;
 }
 
+#f-type-city::placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    color: black ;
+}
+
+input[type="text"]{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+
 #submit{
-    height: 49px;
+    height: 50px;
     background-color: #0065FC;
+    border: 1px solid #0065FC;   
     color: white;
     border-radius: 0px 15px 15px 0px;
-    box-shadow: none;
     font-weight: 700;
     font-size: 18px;
     padding: 14px 16px;
@@ -106,14 +139,37 @@ nav p{
 /* NAV - FILTERS  */
 
 #f-filters{
-    margin-top: 26px;
-    border: #0065FC 1px solid;
+    margin-top: 49px;
+    border: none;
     padding: 0;
 }
 
+#f-filters span{
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 30px;
+}
 #f-filters i{
     color: #0065FC;
     font-size: 18px;
+}
+
+
+.filter{
+    border: solid 2px #D9D9D9;
+    padding: 15px 20px;
+    margin-right: 36px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+form input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + .filter{
+    background-color: #DEEBFF;
 }
 
 /* NAV - INFO */
@@ -121,7 +177,7 @@ nav p{
     margin-top: 48px;
     display: flex;
     align-items: center;
-    border: #0065FC 1px solid;
+    /* border: #0065FC 1px solid; */
 }
 
 #nav-i-icon{
@@ -142,26 +198,122 @@ nav p{
 }
 
 
-
-
-
 /* MAIN */
-main{
+/* main{
     border: solid 2px green;
+} */
+
+main h1{
+    margin-bottom: 8px;
 }
+
+#accommodation-popular, #accommodation-list{
+    width: 880px;
+    height: 626px;
+    border-radius: 20px;
+    margin: 39px 40px 50px;
+    padding: 42px 40px 46px 40px;
+    background-color: #F2F2F2;
+}
+
+.card{
+    width: 246px;
+    height: 199px;
+    border-radius: 20px;
+    background-color: #FFFF;
+    margin: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stars{
+    margin: auto 16px;
+    letter-spacing: -2px;
+}
+
+.fa-star{
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.star5{
+    color: #F2F2F2;
+}
+
+
+/* MAIN - accomodation list */
+
+#accommodation-list{
+    width: 880px;
+    height: 626px;
+    border-radius: 20px;
+    margin: 39px 40px 50px;
+    padding: 42px 40px 46px 40px;
+    background-color: #F2F2F2;
+}
+
+.card img{
+    width: 95%;
+    justify-self: center;
+    height: 124px;
+    border: 5px solid #FFFFFF;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+/* A REMETTRE */
+#list-card6, #list-card5, #list-card4{
+    display: none;
+}
+/*  MAIN - accomodation popular */
+
+#popular-title i{
+    color: #0065FC;
+    font-size: 16px;
+}
+
+#popular-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#accommodation-popular{
+    width: 420px;
+    padding: ;
+}
+
+#accommodation-popular .card-container{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+#accommodation-popular .card{
+    width: 343px;
+    height: 144px;
+    display: flex;
+    border: #0065FC solid 1px;
+}
+
+#accommodation-popular img{
+    border: #0065FC solid 1px;
+    height: 100%;
+    width: 137px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+/*  */
 
 aside{
     border: solid 2px lightblue;
+    border: 5px solid #FFFFFF;
+
 }
 
 footer{
     border: solid 2px blueviolet;
 }
 
-#accommodation-popular{
-    border: solid 2px rosybrown;
-}
 
-#accommodation-list{
-    border: solid 2px brown;
-}
+
+
+
