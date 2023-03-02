@@ -2,9 +2,6 @@
 
 *{
     margin: 0;
-}
-
-body{
     color: black;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
@@ -27,7 +24,6 @@ h3{
     font-weight: 400;
     font-size: 14px;
     margin: auto 16px;
-
 }
 
 a{    
@@ -42,7 +38,6 @@ li{
 /* HEADER */
 
 header{
-    /* border: solid 2px rgb(202, 202, 56); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,7 +50,6 @@ header a{
     text-align: center;
     font-size: 16px;
     color: #000000;
-
 }
 
 #accommodation-page{
@@ -76,14 +70,15 @@ header img{
 }
 
 /* NAV */
+
 nav{
-    /* border: solid 2px orange; */
     margin: 63px 0 0 55px;
 }
 
 nav p{
     margin-top: 8px;
 }
+
 /* NAV - SEARCH BAR */
 
 #f-search-bar{
@@ -177,7 +172,6 @@ input[type="checkbox"]:checked + .filter{
     margin-top: 48px;
     display: flex;
     align-items: center;
-    /* border: #0065FC 1px solid; */
 }
 
 #nav-i-icon{
@@ -199,9 +193,11 @@ input[type="checkbox"]:checked + .filter{
 
 
 /* MAIN */
-/* main{
-    border: solid 2px green;
-} */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 main h1{
     margin-bottom: 8px;
@@ -250,6 +246,12 @@ main h1{
     margin: 39px 40px 50px;
     padding: 42px 40px 46px 40px;
     background-color: #F2F2F2;
+    position: relative;
+}
+
+#accommodation-list .card-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card img{
@@ -260,15 +262,51 @@ main h1{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-/* A REMETTRE */
-#list-card6, #list-card5, #list-card4{
-    display: none;
+
+#accommodation-list p{
+    position: absolute;
+    bottom: 5%;
+    font-weight: 700;
+    font-size: 18px;
 }
-/*  MAIN - accomodation popular */
+ /* MAIN - accomodation popular */
+
+#accommodation-popular{
+    width: 420px;
+}
+
+#accommodation-popular .card-container{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#accommodation-popular .card{
+    width: 343px;
+    height: 144px;
+    display: flex;
+    margin-bottom: 33px;
+    
+}
+
+#accommodation-popular img{
+    height: 100%;
+    width: 137px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#accommodation-popular h3{
+    margin: 7px 0 0 0;
+
+}
+
+#accommodation-popular h2{
+    margin: 0;
+}
 
 #popular-title i{
-    color: #0065FC;
     font-size: 16px;
+    color: #0065FC;
 }
 
 #popular-title{
@@ -277,41 +315,88 @@ main h1{
     align-items: center;
 }
 
-#accommodation-popular{
-    width: 420px;
-    padding: ;
+
+
+.popular-card-text-stars{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-#accommodation-popular .card-container{
-    border: none;
-    margin: 0;
+.popular-card-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: start;
+    align-items: flex-start;
     padding: 0;
 }
-#accommodation-popular .card{
-    width: 343px;
-    height: 144px;
-    display: flex;
-    border: #0065FC solid 1px;
+
+.popular-card-text-stars .stars{
+    margin: 0;
 }
 
-#accommodation-popular img{
-    border: #0065FC solid 1px;
-    height: 100%;
-    width: 137px;
-    border-radius: 20px 0px 0px 20px;
-}
-
-/*  */
+/* ASIDE */
 
 aside{
-    border: solid 2px lightblue;
-    border: 5px solid #FFFFFF;
+    width: 1340px;
+    margin: 0 50px;
 
 }
+.activities-card-container{
+    display: flex;
+    width: 1340px;
+    justify-content: center;
+}
+
+aside .card{
+    width: 302px;
+    height: 444.5px;
+}
+
+
+.activities-card-container img{
+   height: 88%;
+   width: 100%;
+   object-fit: cover;
+   border: none;
+   margin: 0 ;
+   padding: 0;
+}
+
+.activities-card-container h2{
+    margin: 12px 20px;
+    padding: 0;
+    
+}
+
+/* FOOTER */
 
 footer{
-    border: solid 2px blueviolet;
+    max-width: 1340px;
+    margin : 50px 50px 0 50px;
+    padding: 45px 348px 0 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2 ;
 }
+
+footer h2 a, footer h2{
+    margin: 0 0 20px 0;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 0;
+}
+
+footer li, footer ul, footer li a{
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+
 
 
 
